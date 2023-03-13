@@ -45,16 +45,19 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.section{
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 .container {
-  width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 /* header */
 .flex-box {
@@ -75,20 +78,12 @@ img {
   line-height: 1.17;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  margin: 24px auto;
+  margin-right: 76px;
 }
 
 .header-nav {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 40px;
-  margin: 24px 332px 24px 76px;
 }
 
 .header-logo-second {
@@ -131,8 +126,7 @@ img {
 /* service */
 .service {
   background-color: var(--brand-color);
-  height: 600px;
-  padding: 188px ;
+  padding: 188px 0;
 }
 
 .service-text {
@@ -148,9 +142,6 @@ img {
 .service-bnt {
   color: var(--hero-title-buttons);
   background-color: var(--accent-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
@@ -158,6 +149,8 @@ img {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  padding: 16px 32px;
+  gap: 10px;
 }
 
 .active-btn:hover,
@@ -168,8 +161,7 @@ img {
 
 /* specifics */
 .specifics {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 0px;
 }
 
 .specifics-title {
@@ -180,10 +172,11 @@ img {
   letter-spacing: 0.02em;
 }
 
+.specifics-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 .specifics-text,
 .text-dsc {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -213,7 +206,7 @@ img {
 }
 
 .doing-item {
-  flex-basis: calc ((100%-48px)/3);
+  flex-basis: calc ((100% - 48px) / 3);
 }
 
 /* team secondary-title, img  -dsc */
@@ -228,7 +221,7 @@ img {
 }
 
 .team-item {
-  flex-basis: calc ((100%-72px)/4);
+  flex-basis: calc((100% - 72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF;
