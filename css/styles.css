@@ -62,12 +62,14 @@ img {
 /* header */
 .flex-box {
   display: flex;
-  flex-direction: row;
 }
 
 .header {
-  height: 72px;
   border-bottom: 1px solid #E7E9FC;
+}
+
+.header-box {
+  justify-content:space-between;
 }
 
 .header-logo {
@@ -86,6 +88,10 @@ img {
   gap: 40px;
 }
 
+.header-menu {
+  align-items: center;
+}
+
 .header-logo-second {
   color: var(--brand-color);
 }
@@ -96,6 +102,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px auto;
 }
 
 .header-address {
@@ -104,11 +112,8 @@ img {
 
 .address-list {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
   gap: 40px;
-  margin: 24px auto;
 }
 
 .address-item {
@@ -164,6 +169,10 @@ img {
   padding-bottom: 0px;
 }
 
+.specifics-list {
+  gap: 24px;
+}
+
 .specifics-title {
   color: var(--mini-titles-color);
   font-weight: 500;
@@ -206,7 +215,7 @@ img {
 }
 
 .doing-item {
-  flex-basis: calc ((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* team secondary-title, img  -dsc */
@@ -254,7 +263,6 @@ img {
 /* second page */
 
 .second-nav {
-  font-family: "Roboto", sans-serif;
   color: var(--accent-color);
   background-color: var(--cloud);
   font-weight: 500;
@@ -266,8 +274,10 @@ img {
   letter-spacing: 0.04em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: 0px solid transparent;
   padding: 12px 24px;
 }
+
 
 .secondary-title-cards {
   color: var(--secondary-titles-color);
@@ -323,9 +333,8 @@ img {
 }
 
 .services-list-item {
-  flex-basis: calc ((100%-48px)/3);
+  flex-basis: calc((100% - 48px ) / 3);
   border: 1px solid #E7E9FC;
-  max-width: 360px
 }
 
 .cards-text {
