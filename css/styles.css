@@ -159,6 +159,7 @@ img {
   margin: 0 auto;
   padding: 16px 32px;
   gap: 10px;
+  border: 0px solid transparent;
 }
 
 .active-btn:hover,
@@ -245,9 +246,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 32px 16px;
   gap: 8px;
-  margin: 16px 32px;
+  text-align: center;
 }
 
 .team-parthner {
@@ -303,8 +304,7 @@ img {
 
 .footer {
   background-color: var(--brand-color);
-  height: 312px;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .footer-text {
   color: var(--buttons-2page);
@@ -330,9 +330,8 @@ img {
 }
 
 .services-list {
-  padding-bottom: 120px;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
 
 .services-list-item {
@@ -345,9 +344,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px 16px;
+  padding: 32px 16px;
   gap: 8px;
-  margin: 32px 0;
 }
 
 .btn-nav {
@@ -356,6 +354,11 @@ img {
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
-  margin: 96px auto 72px;
+  margin-bottom: 72px;
   justify-content: center;
+}
+
+.button-for-nav {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
